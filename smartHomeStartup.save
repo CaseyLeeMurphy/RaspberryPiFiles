@@ -1,0 +1,6 @@
+#!/bin/bash
+
+node /home/pi/Documents/capstone/nodeserver.js &
+
+homebridge &
+
