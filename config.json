@@ -1,0 +1,93 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "831-17-980"
+    },
+    
+    "accessories": [
+        {
+            "accessory": "Http",
+            "name": "Rasperry lights",
+	    "switchHandling": "realtime",
+	    "http_method": "GET",
+	    "status_url": "http://localhost:3000/api/switchStatus/1",
+	    "on_url": "http://localhost:3000/api/switchon/1",
+	    "off_url": "http://localhost:3000/api/switchoff/1",
+	    "service": "Light",
+	    "brightnessHandling": "no"
+        },{
+            "accessory": "Http",
+            "name": "The Lamp",
+	    "switchHandling": "realtime",
+	    "http_method": "GET",
+	    "status_url": "http://localhost:3000/api/outlet/status/4",
+	    "on_url": "http://localhost:3000/api/outlet/on/4",
+	    "off_url": "http://localhost:3000/api/outlet/off/4",
+	    "service": "Light",
+	    "brightnessHandling": "no"
+        },{
+            "accessory": "Http",
+            "name": "Christmas Tree",
+	    "switchHandling": "realtime",
+	    "http_method": "GET",
+	    "status_url": "http://localhost:3000/api/outlet/status/5",
+	    "on_url": "http://localhost:3000/api/outlet/on/5",
+	    "off_url": "http://localhost:3000/api/outlet/off/5",
+	    "service": "Light",
+	    "brightnessHandling": "no"
+        },{
+            "accessory": "Http",
+            "name": "TV",
+	    "switchHandling": "realtime",
+	    "http_method": "GET",
+	    "status_url": "http://localhost:3000/api/outlet/status/1",
+	    "on_url": "http://localhost:3000/api/outlet/on/1",
+	    "off_url": "http://localhost:3000/api/outlet/off/1",
+	    "service": "Light",
+	    "brightnessHandling": "no"
+        },{
+            "accessory": "Http",
+            "name": "Air Filter",
+	    "switchHandling": "realtime",
+	    "http_method": "GET",
+	    "status_url": "http://localhost:3000/api/outlet/status/3",
+	    "on_url": "http://localhost:3000/api/outlet/on/3",
+	    "off_url": "http://localhost:3000/api/outlet/off/3",
+	    "service": "Light",
+	    "brightnessHandling": "no"
+        },{
+            "accessory": "Http",
+            "name": "Office Light",
+	    "switchHandling": "realtime",
+	    "http_method": "GET",
+	    "status_url": "http://localhost:3000/api/light/status/1",
+	    "on_url": "http://localhost:3000/api/light/on/1",
+	    "off_url": "http://localhost:3000/api/light/off/1",
+	    "service": "Light",
+	    "brightnessHandling": "no"
+        },{
+            "accessory": "Http",
+            "name": "Entry Light",
+	    "switchHandling": "realtime",
+	    "http_method": "GET",
+	    "status_url": "http://localhost:3000/api/light/status/2",
+	    "on_url": "http://localhost:3000/api/light/on/2",
+	    "off_url": "http://localhost:3000/api/light/off/2",
+	    "service": "Light",
+	    "brightnessHandling": "no"
+        },{
+            "accessory": "Http",
+            "name": "Pantry Light",
+	    "switchHandling": "realtime",
+	    "http_method": "GET",
+	    "status_url": "http://localhost:3000/api/light/status/3",
+	    "on_url": "http://localhost:3000/api/light/on/3",
+	    "off_url": "http://localhost:3000/api/light/off/3",
+	    "service": "Light",
+	    "brightnessHandling": "no"
+        }
+    ]
+}
+

@@ -1,7 +1,0 @@
-#!/bin/bash
-
-node /home/pi/Documents/capstone/nodeserver.js &
-
-sleep 3
-
-homebridge &
